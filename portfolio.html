@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — LENSfilm</title>
+  <meta name="description" content="Browse the full video portfolio — club events, DJ sets, weddings, and festivals captured in cinematic style." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-enter">
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">LENS<span>film</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="portfolio.html" class="nav__link nav__link--active">Portfolio</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link nav__cta btn btn--outline">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== PORTFOLIO HERO ========== -->
+  <section class="portfolio-hero">
+    <div class="container">
+      <h1 class="fade-in">Portfolio</h1>
+      <p class="lead fade-in">Every project is a story — here are some of mine. From pulsing club nights to emotional wedding days.</p>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery">
+    <div class="container">
+
+      <!-- Filter buttons (visual only — JS can wire these up) -->
+      <div class="gallery__filters fade-in">
+        <button class="gallery__filter-btn gallery__filter-btn--active" data-filter="all">All</button>
+        <button class="gallery__filter-btn" data-filter="club">Club / DJ</button>
+        <button class="gallery__filter-btn" data-filter="wedding">Weddings</button>
+        <button class="gallery__filter-btn" data-filter="festival">Festivals</button>
+      </div>
+
+      <div class="gallery__grid stagger">
+        <!--
+          REPLACE: Swap each iframe src with your own YouTube/Vimeo embed URL.
+          Update title, category, and data-category to match your content.
+        -->
+
+        <!-- Video 1 -->
+        <div class="video-card fade-in" style="--i: 0" data-category="club">
+          <div class="video-card__embed">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="DJ Set — Underground Night"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-card__info">
+            <p class="video-card__title">Electric Nights — DJ Showcase</p>
+            <p class="video-card__category">Club Event</p>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card fade-in" style="--i: 1" data-category="wedding">
+          <div class="video-card__embed">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Wedding Film — Sarah & James"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-card__info">
+            <p class="video-card__title">Sarah &amp; James — Wedding Film</p>
+            <p class="video-card__category">Wedding</p>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card fade-in" style="--i: 2" data-category="festival">
+          <div class="video-card__embed">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Pulse Festival Aftermovie"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-card__info">
+            <p class="video-card__title">Pulse Festival — Aftermovie</p>
+            <p class="video-card__category">Festival</p>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card fade-in" style="--i: 3" data-category="club">
+          <div class="video-card__embed">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Rooftop Sessions"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-card__info">
+            <p class="video-card__title">Rooftop Sessions — Sunset DJ</p>
+            <p class="video-card__category">Club Event</p>
+          </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-card fade-in" style="--i: 4" data-category="wedding">
+          <div class="video-card__embed">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Wedding Film — Emma & Luca"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-card__info">
+            <p class="video-card__title">Emma &amp; Luca — A Day to Remember</p>
+            <p class="video-card__category">Wedding</p>
+          </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="video-card fade-in" style="--i: 5" data-category="club">
+          <div class="video-card__embed">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Warehouse Rave"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-card__info">
+            <p class="video-card__title">Warehouse Rave — Deep House Night</p>
+            <p class="video-card__category">Club Event</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section class="bottom-cta section--dark">
+    <div class="container">
+      <h2 class="fade-in">Like What You See?</h2>
+      <p class="lead fade-in">Let's create your next cinematic piece. Book a session and let's bring your vision to life.</p>
+      <a href="contact.html" class="btn btn--white btn--large fade-in">Book a Shoot</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="index.html" class="footer__logo">LENS<span>film</span></a>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="portfolio.html" class="footer__link">Portfolio</a>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </nav>
+        <p class="footer__copy">&copy; 2026 LENSfilm. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
