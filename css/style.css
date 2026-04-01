@@ -815,6 +815,28 @@ p {
   letter-spacing: 0.06em;
 }
 
+a.project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card__link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+a.project-card:hover .project-card__link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Video cards (keep for backward compat) */
 .video-card {
   position: relative;
