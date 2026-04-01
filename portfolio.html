@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — LENSfilm</title>
-  <meta name="description" content="Browse the full video portfolio — club events, DJ sets, weddings, and festivals captured in cinematic style." />
+  <title>Portfolio — NJC Studio</title>
+  <meta name="description" content="Bekijk mijn werk — websites, AV-installaties en video editing projecten." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="page-enter">
@@ -16,7 +16,7 @@
   <!-- ========== NAVIGATION ========== -->
   <nav class="nav" id="nav" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">LENS<span>film</span></a>
+      <a href="index.html" class="nav__logo">NJC<span>studio</span></a>
 
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
@@ -28,8 +28,10 @@
         <li><a href="index.html" class="nav__link">Home</a></li>
         <li><a href="portfolio.html" class="nav__link nav__link--active">Portfolio</a></li>
         <li><a href="about.html" class="nav__link">About</a></li>
-        <li><a href="contact.html" class="nav__link nav__cta btn btn--outline">Get in Touch</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
       </ul>
+
+      <a href="contact.html" class="nav__cta">Get in Touch</a>
     </div>
   </nav>
 
@@ -37,7 +39,7 @@
   <section class="portfolio-hero">
     <div class="container">
       <h1 class="fade-in">Portfolio</h1>
-      <p class="lead fade-in">Every project is a story — here are some of mine. From pulsing club nights to emotional wedding days.</p>
+      <p class="lead fade-in">Een selectie van mijn werk — van websites en AV-setups tot video edits.</p>
     </div>
   </section>
 
@@ -45,121 +47,82 @@
   <section class="gallery">
     <div class="container">
 
-      <!-- Filter buttons (visual only — JS can wire these up) -->
+      <!-- Filter buttons -->
       <div class="gallery__filters fade-in">
-        <button class="gallery__filter-btn gallery__filter-btn--active" data-filter="all">All</button>
-        <button class="gallery__filter-btn" data-filter="club">Club / DJ</button>
-        <button class="gallery__filter-btn" data-filter="wedding">Weddings</button>
-        <button class="gallery__filter-btn" data-filter="festival">Festivals</button>
+        <button class="gallery__filter-btn gallery__filter-btn--active" data-filter="all">Alles</button>
+        <button class="gallery__filter-btn" data-filter="website">Websites</button>
+        <button class="gallery__filter-btn" data-filter="av">AV</button>
+        <button class="gallery__filter-btn" data-filter="video">Video</button>
       </div>
 
       <div class="gallery__grid stagger">
-        <!--
-          REPLACE: Swap each iframe src with your own YouTube/Vimeo embed URL.
-          Update title, category, and data-category to match your content.
-        -->
 
-        <!-- Video 1 -->
-        <div class="video-card fade-in" style="--i: 0" data-category="club">
-          <div class="video-card__embed">
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="DJ Set — Underground Night"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy"
-            ></iframe>
+        <!-- Project 1 — Website -->
+        <div class="project-card fade-in" style="--i: 0" data-category="website">
+          <div class="project-card__image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Website project — E-commerce platform" loading="lazy" />
           </div>
-          <div class="video-card__info">
-            <p class="video-card__title">Electric Nights — DJ Showcase</p>
-            <p class="video-card__category">Club Event</p>
+          <div class="project-card__info">
+            <p class="project-card__title">E-commerce Platform</p>
+            <p class="project-card__category">Website</p>
           </div>
         </div>
 
-        <!-- Video 2 -->
-        <div class="video-card fade-in" style="--i: 1" data-category="wedding">
-          <div class="video-card__embed">
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Wedding Film — Sarah & James"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy"
-            ></iframe>
+        <!-- Project 2 — Video -->
+        <div class="project-card fade-in" style="--i: 1" data-category="video">
+          <div class="project-card__image">
+            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&q=80" alt="Video editing project — Bedrijfsvideo" loading="lazy" />
           </div>
-          <div class="video-card__info">
-            <p class="video-card__title">Sarah &amp; James — Wedding Film</p>
-            <p class="video-card__category">Wedding</p>
+          <div class="project-card__info">
+            <p class="project-card__title">Bedrijfsvideo — Tech Startup</p>
+            <p class="project-card__category">Video Editing</p>
           </div>
         </div>
 
-        <!-- Video 3 -->
-        <div class="video-card fade-in" style="--i: 2" data-category="festival">
-          <div class="video-card__embed">
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Pulse Festival Aftermovie"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy"
-            ></iframe>
+        <!-- Project 3 — AV -->
+        <div class="project-card fade-in" style="--i: 2" data-category="av">
+          <div class="project-card__image">
+            <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=600&q=80" alt="AV setup — Event techniek" loading="lazy" />
           </div>
-          <div class="video-card__info">
-            <p class="video-card__title">Pulse Festival — Aftermovie</p>
-            <p class="video-card__category">Festival</p>
+          <div class="project-card__info">
+            <p class="project-card__title">Live Event Setup</p>
+            <p class="project-card__category">AV Specialist</p>
           </div>
         </div>
 
-        <!-- Video 4 -->
-        <div class="video-card fade-in" style="--i: 3" data-category="club">
-          <div class="video-card__embed">
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Rooftop Sessions"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy"
-            ></iframe>
+        <!-- Project 4 — Website -->
+        <div class="project-card fade-in" style="--i: 3" data-category="website">
+          <div class="project-card__image">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80" alt="Website project — Portfolio site" loading="lazy" />
           </div>
-          <div class="video-card__info">
-            <p class="video-card__title">Rooftop Sessions — Sunset DJ</p>
-            <p class="video-card__category">Club Event</p>
+          <div class="project-card__info">
+            <p class="project-card__title">Portfolio Website — Fotograaf</p>
+            <p class="project-card__category">Website</p>
           </div>
         </div>
 
-        <!-- Video 5 -->
-        <div class="video-card fade-in" style="--i: 4" data-category="wedding">
-          <div class="video-card__embed">
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Wedding Film — Emma & Luca"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy"
-            ></iframe>
+        <!-- Project 5 — Video -->
+        <div class="project-card fade-in" style="--i: 4" data-category="video">
+          <div class="project-card__image">
+            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&q=80" alt="Video project — Aftermovie" loading="lazy" />
           </div>
-          <div class="video-card__info">
-            <p class="video-card__title">Emma &amp; Luca — A Day to Remember</p>
-            <p class="video-card__category">Wedding</p>
+          <div class="project-card__info">
+            <p class="project-card__title">Festival Aftermovie</p>
+            <p class="project-card__category">Video Editing</p>
           </div>
         </div>
 
-        <!-- Video 6 -->
-        <div class="video-card fade-in" style="--i: 5" data-category="club">
-          <div class="video-card__embed">
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Warehouse Rave"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy"
-            ></iframe>
+        <!-- Project 6 — AV -->
+        <div class="project-card fade-in" style="--i: 5" data-category="av">
+          <div class="project-card__image">
+            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&q=80" alt="AV setup — Vergaderruimte" loading="lazy" />
           </div>
-          <div class="video-card__info">
-            <p class="video-card__title">Warehouse Rave — Deep House Night</p>
-            <p class="video-card__category">Club Event</p>
+          <div class="project-card__info">
+            <p class="project-card__title">Vergaderruimte AV-Installatie</p>
+            <p class="project-card__category">AV Specialist</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -167,9 +130,9 @@
   <!-- ========== BOTTOM CTA ========== -->
   <section class="bottom-cta section--dark">
     <div class="container">
-      <h2 class="fade-in">Like What You See?</h2>
-      <p class="lead fade-in">Let's create your next cinematic piece. Book a session and let's bring your vision to life.</p>
-      <a href="contact.html" class="btn btn--white btn--large fade-in">Book a Shoot</a>
+      <h2 class="fade-in">Interesse in samenwerking?</h2>
+      <p class="lead fade-in">Laat me weten wat je nodig hebt en ik stuur je een vrijblijvend voorstel.</p>
+      <a href="contact.html" class="btn btn--white btn--large fade-in">Start een project</a>
     </div>
   </section>
 
@@ -177,14 +140,14 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <a href="index.html" class="footer__logo">LENS<span>film</span></a>
+        <a href="index.html" class="footer__logo">NJC<span>studio</span></a>
         <nav class="footer__links" aria-label="Footer navigation">
           <a href="index.html" class="footer__link">Home</a>
           <a href="portfolio.html" class="footer__link">Portfolio</a>
           <a href="about.html" class="footer__link">About</a>
           <a href="contact.html" class="footer__link">Contact</a>
         </nav>
-        <p class="footer__copy">&copy; 2026 LENSfilm. All rights reserved.</p>
+        <p class="footer__copy">&copy; 2026 NJC Studio. All rights reserved.</p>
       </div>
     </div>
   </footer>

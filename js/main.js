@@ -13,7 +13,7 @@
   const navLinks = document.getElementById('navLinks');
   const contactForm = document.getElementById('contactForm');
   const filterBtns = document.querySelectorAll('.gallery__filter-btn');
-  const videoCards = document.querySelectorAll('.gallery__grid .video-card');
+  const videoCards = document.querySelectorAll('.gallery__grid .video-card, .gallery__grid .project-card');
 
   // ---------- Mobile Navigation Toggle ----------
   if (navToggle && navLinks) {
